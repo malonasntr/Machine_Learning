@@ -28,7 +28,7 @@ This stage aims to group customer data based on specific characteristics using t
 
 ---
 
-### 🔹 Stage 2: Classification
+### Stage 2: Classification
 This stage aims to build a predictive model using the cluster results as the **target labels**.
 
 #### Steps Performed:
@@ -41,7 +41,7 @@ This stage aims to build a predictive model using the cluster results as the **t
 
 ---
 
-## 📊 Dataset
+## Dataset
 The dataset was provided in CSV format from Google Sheets:  
 [Dataset Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vTbg5WVW6W3c8SPNUGc3A3AL-AG32TPEQGpdzARfNICMsLFI0LQj0jporhsLCeVhkN5AoRsTkn08AYl/pub?gid=2020477971&single=true&output=csv)
 
@@ -49,16 +49,20 @@ It is stored locally in the `dataset/` folder as `clustering_dataset.csv` for ea
 
 ---
 
-## 🧠 Technologies Used
-- Python 3.x  
-- pandas  
-- numpy  
-- matplotlib  
-- seaborn  
-- scikit-learn  
-- yellowbrick  
-- joblib  
-
----
-
 ## 📂 Folder Structure
+BMLP_Clustering_Klasifikasi_SarmaElvita/
+│
+├── dataset/
+│ └── clustering_dataset.csv
+│
+├── notebooks/
+│ ├── [Clustering]_Submission_Akhir_BMLP_Sarma_Elvita.ipynb
+│ └── [Klasifikasi]_Submission_Akhir_BMLP_Sarma_Elvita.ipynb
+│
+├── models/
+│ ├── model_clustering.joblib
+│ └── decision_tree_model.h5
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
