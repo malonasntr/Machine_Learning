@@ -1,8 +1,8 @@
 # 🧩 Clustering and Classification Analysis - BMLP Sarma Elvita
 
 ## Project Description
-This project is part of the final submission for the **"Belajar Machine Learning untuk Pemula (BMLP)"** program.  
-The analysis consists of two main stages: **Clustering** and **Classification**, using a customer transaction dataset.
+This project is part of the final submission for the **"Belajar Machine Learning untuk Pemula (BMLP)"** program by Dicoding.  
+It focuses on two main stages of analysis: **Clustering** and **Classification**, applied to a customer transaction dataset using Python.
 
 ---
 
