@@ -1,51 +1,55 @@
-# # 🎯 Analisis Clustering dan Klasifikasi - BMLP Sarma Elvita
+# 🧩 Clustering and Classification Analysis - BMLP Sarma Elvita
 
-## 🧩 Deskripsi Proyek
-Proyek ini merupakan bagian dari submission akhir pada program **Belajar Machine Learning untuk Pemula (BMLP)**.  
-Analisis dilakukan dalam dua tahap utama yaitu **Clustering** dan **Klasifikasi** menggunakan dataset transaksi pelanggan.
+## Project Description
+This project is part of the final submission for the **"Belajar Machine Learning untuk Pemula (BMLP)"** program.  
+The analysis consists of two main stages: **Clustering** and **Classification**, using a customer transaction dataset.
 
-### 🔹 Tahap 1: Clustering
-Tahap ini bertujuan untuk mengelompokkan data pelanggan berdasarkan karakteristik tertentu menggunakan algoritma **K-Means Clustering**.
+---
 
-Langkah-langkah yang dilakukan:
-1. **Memuat Dataset dan EDA**
-   - Menampilkan data awal (`head()`), struktur (`info()`), dan statistik deskriptif (`describe()`).
-2. **Pembersihan dan Pra-pemrosesan**
-   - Mengecek data kosong dan duplikat (`isnull().sum()` dan `duplicated().sum()`).
-   - Melakukan **feature scaling** (MinMaxScaler atau StandardScaler).
-   - Melakukan **feature encoding** untuk kolom kategorikal.
-   - Menghapus kolom ID seperti `TransactionID`, `AccountID`, `DeviceID`, `IPAddress`, dan `MerchantID`.
-3. **Membangun Model Clustering**
-   - Menentukan jumlah cluster terbaik menggunakan **Elbow Method** dengan `KElbowVisualizer`.
-   - Melatih model menggunakan `KMeans` dari `sklearn.cluster`.
-   - Menyimpan model hasil training dengan `joblib.dump()` sebagai `model_clustering.joblib`.
-4. **Interpretasi Hasil**
-   - Menganalisis karakteristik tiap cluster berdasarkan hasil agregasi (mean, min, max).
-   - Menambahkan kolom `Target` untuk menandai hasil cluster.
-   - Mengekspor dataset hasil clustering untuk tahap klasifikasi selanjutnya.
+### Stage 1: Clustering
+This stage aims to group customer data based on specific characteristics using the **K-Means Clustering** algorithm.
 
-### 🔹 Tahap 2: Klasifikasi
-Tahap ini bertujuan untuk membangun model prediksi menggunakan hasil cluster sebagai **label target**.
+#### Steps Performed:
+1. **Load Dataset and Exploratory Data Analysis (EDA)**
+   - Display the dataset using `head()`, structure with `info()`, and summary statistics with `describe()`.
+2. **Data Cleaning and Preprocessing**
+   - Check for missing and duplicate values using `isnull().sum()` and `duplicated().sum()`.
+   - Perform **feature scaling** using `MinMaxScaler()` or `StandardScaler()`.
+   - Apply **feature encoding** to categorical columns.
+   - Drop unnecessary ID-related columns such as `TransactionID`, `AccountID`, `DeviceID`, `IPAddress`, and `MerchantID`.
+3. **Build the Clustering Model**
+   - Determine the optimal number of clusters using the **Elbow Method** with `KElbowVisualizer`.
+   - Train the model using `KMeans` from `sklearn.cluster`.
+   - Save the trained model using `joblib.dump()` as `model_clustering.joblib`.
+4. **Interpretation of Results**
+   - Analyze the characteristics of each cluster using aggregated statistics (mean, min, max).
+   - Add a new column named `Target` representing cluster labels.
+   - Export the preprocessed dataset with cluster labels for the classification stage.
 
-Langkah-langkah yang dilakukan:
-1. **Persiapan Data**
-   - Membagi data menggunakan `train_test_split()`.
-2. **Membangun Model Klasifikasi**
-   - Menggunakan algoritma **Decision Tree Classifier** dari `sklearn.tree`.
-   - Melatih model dan mengevaluasi akurasi.
-   - Menyimpan model dalam format `.h5` menggunakan `joblib.dump()` dengan nama `decision_tree_model.h5`.
+---
+
+### 🔹 Stage 2: Classification
+This stage aims to build a predictive model using the cluster results as the **target labels**.
+
+#### Steps Performed:
+1. **Data Preparation**
+   - Split the dataset using `train_test_split()`.
+2. **Build the Classification Model**
+   - Use the **Decision Tree Classifier** algorithm from `sklearn.tree`.
+   - Train the model and evaluate its accuracy.
+   - Save the trained model using `joblib.dump()` as `decision_tree_model.h5`.
 
 ---
 
 ## 📊 Dataset
-Dataset digunakan dalam format CSV dari Google Sheets:
-[Link Dataset CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vTbg5WVW6W3c8SPNUGc3A3AL-AG32TPEQGpdzARfNICMsLFI0LQj0jporhsLCeVhkN5AoRsTkn08AYl/pub?gid=2020477971&single=true&output=csv)
+The dataset was provided in CSV format from Google Sheets:  
+[Dataset Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vTbg5WVW6W3c8SPNUGc3A3AL-AG32TPEQGpdzARfNICMsLFI0LQj0jporhsLCeVhkN5AoRsTkn08AYl/pub?gid=2020477971&single=true&output=csv)
 
-Dataset ini kemudian disimpan secara lokal pada folder `dataset/` sebagai `clustering_dataset.csv` agar dapat digunakan berulang kali tanpa koneksi internet.
+It is stored locally in the `dataset/` folder as `clustering_dataset.csv` for easier access without requiring an internet connection.
 
 ---
 
-## 🧠 Teknologi yang Digunakan
+## 🧠 Technologies Used
 - Python 3.x  
 - pandas  
 - numpy  
@@ -57,5 +61,4 @@ Dataset ini kemudian disimpan secara lokal pada folder `dataset/` sebagai `clust
 
 ---
 
-## 📂 Struktur Folder
-
+## 📂 Folder Structure
