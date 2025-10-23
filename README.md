@@ -43,7 +43,7 @@ This stage aims to build a predictive model using the cluster results as the **t
 
 ## Dataset
 The dataset was provided in CSV format from Google Sheets:  
-[Dataset Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vTbg5WVW6W3c8SPNUGc3A3AL-AG32TPEQGpdzARfNICMsLFI0LQj0jporhsLCeVhkN5AoRsTkn08AYl/pub?gid=2020477971&single=true&output=csv')
+[Dataset Link]('https://docs.google.com/spreadsheets/d/1-x8hz_KfX4qg-GDp6i4WZzNG9pp7b0KaEO_pJwFGrwU/edit?usp=drive_link')
 
 It is stored locally in the `dataset/` folder as `clustering_dataset.csv` for easier access without requiring an internet connection.
 
