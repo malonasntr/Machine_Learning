@@ -49,20 +49,7 @@ It is stored locally in the `dataset/` folder as `clustering_dataset.csv` for ea
 
 ---
 
-## 📂 Folder Structure
-BMLP_Clustering_Klasifikasi_SarmaElvita/
-│
-├── dataset/
-│ └── clustering_dataset.csv
-│
-├── notebooks/
-│ ├── [Clustering]_Submission_Akhir_BMLP_Sarma_Elvita.ipynb
-│ └── [Klasifikasi]_Submission_Akhir_BMLP_Sarma_Elvita.ipynb
-│
-├── models/
-│ ├── model_clustering.joblib
-│ └── decision_tree_model.h5
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
+## 🏁 Final Results
+- The clustering model is saved as model_clustering.joblib.
+- The classification model is saved as decision_tree_model.h5.
+- The processed dataset includes an additional column named Target, representing the assigned cluster.
