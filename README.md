@@ -1,4 +1,4 @@
-# 🧩 Clustering and Classification Analysis - BMLP Sarma Elvita
+# 🧩 Clustering and Classification Analysis
 
 ## Project Description
 This project is part of the final submission for the **"Belajar Machine Learning untuk Pemula (BMLP)"** program by Dicoding.  
